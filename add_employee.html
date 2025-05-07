@@ -1,0 +1,156 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Employee</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e4f1fe;
+            color: #333;
+        }
+
+        .atag {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        a {
+            background-color: rgba(52, 73, 94, 0.24);
+            text-decoration: none;
+            color: #34495e;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            background-color: #34495e;
+            color: #b0e6ff;
+            transition: background-color 0.3s;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            border: 2px solid #34495e;
+            margin: 30px auto;
+            padding: 20px;
+            width: 50%;
+            background-color: #ffffff;
+        }
+
+        .add_emp {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        label {
+            font-size: 16px;
+            color: #34495e;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .add_emp input, button {
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #34495e;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .add_emp input:focus {
+            border-color: #2980b9;
+            box-shadow: 0 0 5px rgba(41, 128, 185, 0.5);
+        }
+
+        #emp_form_submit {
+            background-color: #34495e;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #emp_form_submit:hover {
+            background-color: #2c3e50;
+        }
+
+        .gender-options {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: -5px;
+        }
+
+        .gender-options input[type="radio"] {
+            margin-right: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="atag">
+        <a href="admin_dashboard.php">/Go to Dashboard</a>
+    </div>
+
+    <div id="addEmployeeSection">
+        <form method="POST" action="add_employee.php">
+            <div class="add_emp">
+                <label for="empname">Employee Name:</label>
+                <input type="text" id="empname" name="empname" placeholder="Enter Employee Name" maxlength="30" required>
+
+                <label for="empemail">Employee Email:</label>
+                <input type="email" id="empemail" name="empemail" placeholder="Enter Employee Email" maxlength="25" required>
+
+                <label for="empdesig">Designation:</label>
+                <input type="text" id="empdesig" name="empdesig" placeholder="Enter Designation" required>
+
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <input type="radio" id="male" name="empgender" value="Male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="empgender" value="Female" required>
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="empgender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+
+                <label for="empaddress">Address:</label>
+                <input type="text" id="empaddress" name="empaddress" placeholder="Enter Address" required>
+
+                <label for="empmobno">Mobile Number:</label>
+                <input type="tel" id="empmobno" name="empmobno" placeholder="Enter Mobile Number" pattern="[0-9]{10}" maxlength="10" required>
+
+                <label for="emergencycontact">Emergency Contact:</label>
+                <input type="tel" id="emergencycontact" name="emergencycontact" placeholder="Enter Emergency Contact" pattern="[0-9]{10}" maxlength="10" required>
+
+                <label for="empsalary">Salary:</label>
+                <input type="number" id="empsalary" name="empsalary" placeholder="Enter Salary" required>
+
+                <label for="emppassword">Password:</label>
+                <input type="password" id="emppassword" name="emppassword" placeholder="Enter Password" maxlength="15" required>
+
+                <label for="confirmemppassword">Confirm Password:</label>
+                <input type="password" id="confirmemppassword" name="confirmemppassword" placeholder="Confirm Password" maxlength="15" required>
+
+                <label for="date_of_joining">Date of Joining:</label>
+                <input type="date" id="date_of_joining" name="date_of_joining" required>
+
+                <button type="submit" id="emp_form_submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

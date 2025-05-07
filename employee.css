@@ -1,0 +1,210 @@
+  *{
+    font-family: Arial, sans-serif;
+    margin: 3px;
+}
+
+body{
+      /* background-color:#34495e; */
+    background-color: #cfe2e1;
+  }
+  
+  /* Styling for Navigation Menu */
+  .nav-menu {
+    /* background-color: #039e91; */
+    background-color:#34495e;
+    padding: 10px;
+}
+h1 {
+    font-size: 28px;
+    text-align: end;
+    margin-bottom: -10px;
+    margin-right: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    /* color: #3282b8; */
+    color: #bbe1fa;
+}
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.nav-menu a:hover {
+    /* background-color: #5071a1; */
+    /* background-color:#268b86; */
+    color: #b0e6ff;
+}
+
+.role {
+    text-align: center;
+    color: #ffffff;
+    margin: 20px 0;
+}
+
+/* Styling for Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table th {
+    /* background-color: #0c7c73; */
+    background-color:#274a70;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-align: left;
+}
+/* table tr:nth-child(even) {
+    background-color: #f2f2f2;
+} */
+table tr:nth-child(odd) {
+    background-color: #eaf4f4; /* Light teal-blue */
+}
+
+table tr:nth-child(even) {
+    background-color: #f4f7fb; /* Soft light blue */
+}
+
+table tr:hover {
+    background-color: #ffe8a1;
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+table tr td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+h2{
+    color:rgb(6, 74, 129);
+    padding-left: 2rem;
+    margin: 20px 10px;
+}
+
+
+/* ------------------ task table -------------------- */
+
+/* Task Box Styling */
+.task-box {
+    padding: 15px;
+    border-radius: 8px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* High Priority - Red */
+.task-high {
+    background-color: #f44336;
+}
+
+/* Medium Priority - Yellow */
+.task-medium {
+    background-color: #ffeb3b;
+    color: #000;
+}
+
+/* Low Priority - Green */
+.task-low {
+    background-color: #4caf50;
+}
+
+
+
+/* ---------------------------- Profile Section ---------------------------*/
+
+
+/* Profile Picture Styling */
+.profile-pic {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50; /* Green border to match your theme */
+    margin-bottom: 12px;
+}
+/* Profile Container */
+.profile-container {
+    background-color: #f3fefb; /* Soft greenish-white background */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow for depth */
+    margin-top: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Profile Details Styling */
+.profile-details {
+    padding: 20px;
+    border-left: 3px solid #d4edda; /* Subtle greenish divider */
+    text-align: left;
+}
+
+.profile-details p {
+    margin: 12px 0;
+    font-size: 17px;
+    color: #2E2E2E;
+    font-weight: 400;
+}
+
+.profile-details strong {
+    color: #4CAF50; /* Green highlight for labels */
+    font-weight: 600;
+}
+
+/* Input Styling */
+.profile-details input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 2px solid #a1ddac;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.profile-details input[type="text"]:focus {
+    border-color: #4CAF50; /* Strong green focus */
+    outline: none;
+    background-color: #f9fefb;
+}
+
+/* Submit Button */
+button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-details {
+        padding: 15px;
+        border-left: none;
+    }
+}

@@ -1,70 +1,62 @@
 **TaskVault: Employee Task Management System ✅**
 TaskVault is a web-based employee task management system built to streamline task assignment, progress tracking, and employee management for organizations. Designed for admins to easily assign and monitor tasks, and for employees to manage and update their task status in real-time.
 
-🛠️** Technologies Used**
+🛠️ Technologies Used
 Frontend: HTML, CSS
-
 Backend: PHP
-
 Database: MySQL
-
 Server: XAMPP / Apache
 
+👨‍💼 Admin Features
+Add and manage employee records
 
+Assign tasks with deadlines and priority levels
 
-📌 Features
-**Admin Panel:**
-Add new employees with details
+Dashboard showing total employees, pending and in-progress tasks
 
-Assign tasks to individual employees
+View employee details and assign tasks dynamically
 
-View dashboard with task stats: total tasks, pending, in-progress
+Secure admin logout
 
-View and update employee details
+👨‍💻 Employee Features
+Login to personal dashboard
 
-Logout securely
+View assigned tasks with status
 
-**Employee Panel:**
-Login to view assigned tasks
+Update task progress (Pending, In Progress, Completed)
 
-Task dashboard with status (Pending, In Progress, Completed)
+View profile details
 
-Update task progress via checklist
+Secure employee logout
 
-View personal profile details
+📌 Project Structure Overview
+admin/ — Admin login and dashboard
 
-Logout option
-
-
-⚙️** Project Structure**
-admin/ — Admin login, dashboard, task management
-
-employee/ — Employee panel, task updates, profile
+employee/ — Employee panel and task display
 
 db/connection.php — Database connection
 
-login/ — Authentication logic
+login/ — Login logic
 
-logout/ — Secure logout for admin/employee
+logout/ — Secure logout mechanism
 
-🔐** Authentication**
-Separate login pages for admin and employees
+🔒 Authentication
+Role-based login for Admin and Employee
 
-Session-based access control to protect pages
-**
-📌 Limitations**
-No notification system yet
+Session management for secure page access
 
-No file upload or deadline reminders
+⚠️ Limitations (Current Version)
+No email notification system
 
-Passwords not encrypted in the current version
+No task file uploads or comment sections
 
-Future improvements may include email alerts, file attachments, and password hashing for better security.
+Passwords are not encrypted yet
 
-📬** Contact**
-For any queries, feedback, or suggestions:
+These features may be added in future versions for better security and usability.
 
+📬 Contact
 Email: ayushsgaikwad8480@gmail.com
-
 GitHub: AyushGaikwad84
+
+
 
